@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" box="width=device-width, initial-scale=1.0">
+        <title>spolaya</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    </head>
+    <body>
+        <div id="progressbar"></div>
+        <div id="scrollpath"></div>
+        <div class="page">
+            <span class="menu_toggle">
+              <i class="menu_open fa fa-bars fa-lg"></i>
+              <i class="menu_close fa fa-times fa-lg"></i>
+            </span>
+            <ul class="menu_items">
+              <li><a href="dream.html"><i class="icon fa fa-home fa-2x"></i>Home</a></li>
+              <li><a href="#"><i class="icon fa fa-phone fa-2x"></i> Contact Us</a></li>
+              <li><a href="#"><i class="icon fa fa-heart fa-2x"></i> About Us</a></li>
+            </ul>
+        </div>
+        <main class="content">
+        <section>
+         <img src="1x/Asset 3.png" id="bg">
+         <img src="1x/Asset 1@4x.png" id="moon" style="width: 100px; height: 120px; margin-left: 500px; top: 100px;" data-aos="fade-up" data-aos-duration="650" data-aos-delay="0">
+         <img src="1x/Asset 1@2x.png" id="clouds">
+         <img src="1x/Asset 2.png" id="trees"data-aos="fade-up" data-aos-duration="1250" data-aos-delay="0">
+         <h2  id="text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">moon light</h2>
+        </section>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+        <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let clouds = document.getElementById("clouds");
+        let trees = document.getElementById("trees");
+        let text = document.getElementById("text");
+        window.addEventListener('scroll', function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 1 + 'px';
+            moon.style.left = value * 3 + 'px';
+            clouds.style.left = -value * 2 + 'px';
+            trees.style.top = value * 0.5 + 'px';
+            text.style.left = -value * 1 + 'px';
+
+        })
+        </script>
+        <script type="text/javascript">
+        let progress = document.getElementById('progressbar');
+        let totalheight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function(){
+            let progressHieght = (window.pageYOffset / totalheight) * 100;
+            progress.style.height = progressHieght + "%";
+        }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script>
+            // elements
+        var $page = $('.page');
+        
+        $('.menu_toggle').on('click', function(){
+          $page.toggleClass('shazam');
+        });
+        $('.content').on('click', function(){
+           $page.removeClass('shazam');
+});
+    </script>
+        <h2 id="tex1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">We help you find what you need</h2>
+        <div class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+            <a href="oof/Arts_Entertainment/Arts_Entertainment.html" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
+                <div class="box">
+               <div class="content">
+                <img src="1x/Arts.png">
+                <p>Arts & Entertainment</p>
+                </div>
+            </div> 
+         </a>
+            <a href="oof/Business  Investing/Business  Investing.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Business.png">
+                <p>Business / Investing</p>
+            </div>
+        </div> 
+    </a>
+    <a href="oof/Computers  Internet/Computers  Internet.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Computers.png">
+                <p>Computers / Internet</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Cooking, Food & drinks/Cooking, Food & drinks.html" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Cooking.png">
+                <p>Cooking, Food & drinks</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/E-business & E-marketing/E-business & E-marketing.html" data-aos="fade-up" data-aos-duration="750" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/marketing.png">
+                <p>E-business & E-marketing</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Education/Education.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Education.png">
+                <p>Education</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Employment & Jobs/Employment & Jobs.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Employment.png">
+                <p>Employment & Jobs</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Games/Games.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/games.png">
+                <p>Games</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Green Products/Green Products.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Green.png">
+                <p>Green Products</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Health & Fitness/Health & Fitness.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Health.png">
+                <p>Health & Fitness</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Home & Garden/Home & Garden.html" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="0"> 
+            <div class="box">
+                <div class="content">
+                    <img src="1x/home and garden.png" >
+                    <p>Home & Garden</p>
+                </div>
+            </div>
+        <a href="oof/Languages/Languages.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Languages.png">
+                <p>Languages</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Parenting & Families/Parenting & Families.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Parenting.png">
+                <p>Parenting & Families</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Reference/Reference.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/reference.png">
+                <p>Reference</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Self-Help/Self-Help.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0" > 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Help.png">
+                <p>Self-Help</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Software & Services/Software & Services.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0"> 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Software.png">
+                <p>Software & Services</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Spirituality, New Age & Alternative Beliefs/Spirituality, New Age & Alternative Beliefs.html" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0" > 
+        <div class="box">
+            <div class="content">
+                <img src="1x/Spirituality.png">
+                <p>Spirituality, New Age & Alternative Beliefs</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Sports/Sports.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+         <div class="box">
+            <div class="content">
+                <img src="1x/Sports.png">
+                <p>Sports</p>
+            </div>
+        </div>
+        </a>
+        <a href="oof/Travel/Travel.html" data-aos="fade-up" data-aos-duration="1750" data-aos-delay="0"> 
+         <div class="box">
+            <div class="content">
+                <img src="1x/travel.png">
+                <p>Travel</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    <div class="container1" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="0">
+        <a href="#"><span>about us</span></a>
+        <a href="oof/contact.html"><span>contact us</span></a>
+        <a href="#"><span>FAQ</span></a>
+    </div>
+</main>
+  </body>
+</html> 
